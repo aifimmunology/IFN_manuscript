@@ -23,13 +23,13 @@ ifn_score_generate <- function(donor_df,
   
   # Valid cell types for L1 and L2
   celltypes_l1 <- c("Tcell", "Bcell", "NK", "Monocyte")
-  celltypes_l2 <- c("CD4 Naive", "CD8 Naive", "CD4 Memory", "CD8 Memory", 
+  celltypes_l2 <- c("CD4_Naive", "CD8_Naive", "CD4_Memory", "CD8_Memory", 
                     "NK.CD56hi", "NK.CD56dim", "Treg", "gdT", "MAIT", 
-                    "B Naive", "B Memory", "Plasma")
+                    "B_Naive", "B_Memory", "Plasma")
   
   # Cell types that do not respond to IFNg
   IFNg_nonresponding <- c("NK.CD56hi", "NK.CD56dim", "gdT", "MAIT", 
-                          "Memory CD8", "Plasma")
+                          "Memory_CD8", "Plasma")
   
   if (cell_type_level == "PBMC") {
     cell_type <- "PBMC"
